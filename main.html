@@ -1,16 +1,31 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Responsive Grid Bootstrap</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+	<div class="container">
+		<div class="row my-row">
+			<div class="col-md-4 col-sm-6 r1c1 my-col">Row1 Col1</div>
+			<div class="col-md-8 col-sm-6 r1c2 my-col">Row1 Col2</div>
+		</div>
+	
+		<div class="row my-row justify-content-between">
+			<div class="col-md-4 offset-md-2 r2c1 my-col">Row2 Col1</div>
+			<div class="col-md-4 r2c2 my-col">Row2 Col2</div>
+		</div>
+	
+		<div class="row my-row justify-content-center">
+			<div class="col-md-4 col-sm-6 r3c1 my-col">Row3 Col1</div>
+			<div class="col-md-4 col-sm-6 r3c2 my-col">Row3 Col3</div>
+		</div>
+	</div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-
 </html>
